@@ -318,7 +318,7 @@ th {
 }
 .glyphicon-star-empty:before {
   content: "\e007";
-}
+}/
 .glyphicon-user:before {
   content: "\e008";
 }
@@ -1084,8 +1084,8 @@ html {
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 18px;
+  line-height: 1.2857143;
   color: #333;
   background-color: #fff;
 }
@@ -1124,6 +1124,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  padding-top: 10px;
 }
 .img-rounded {
   border-radius: 6px;
@@ -4267,8 +4268,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
     float: left;
-    height: 50px;
-    padding: 15px 15px;
+    height: 40px;
+    padding: 10px 0px;
     font-size: 18px;
     line-height: 20px;
     background-color: none;
@@ -5010,7 +5011,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+    border-color: #3e4a43;
 }
 .thumbnail .caption {
   padding: 9px;

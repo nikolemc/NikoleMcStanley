@@ -19,8 +19,8 @@
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
-    
-        
+
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -36,32 +36,29 @@
 
                 <ul class="nav navbar-nav">
                     <li><a href="#">about</a></li>
-                    <li><a href="#">portfolio</a></li>
+                    <
+                    <li>@Html.ActionLink("portfolio", "Index", "Portfolio")</li>
                     <li><a href="#">blog</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
 
                 <div class="navbar-form navbar-right">
                     <ul class="social-network social-circle">
-                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="https://github.com/nikolemc" class="icoGitHub" title="GitHub"><i class="fa fa-github"></i></a></li>
                         <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://medium.com/" nikolemc" class="icoMedium" title="Medium"><i class="fa fa-medium"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nikole-mcstanley-98b733a/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
-
 
             </div>
         </div>
     </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - NikolePortfolio</p>
-        </footer>
-    </div>
+
+    @RenderBody()
+   
+    <footer id="sticky">&copy&nbsp Design and Website by Nikole McStanley</footer>
 
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

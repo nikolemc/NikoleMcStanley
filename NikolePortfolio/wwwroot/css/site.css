@@ -41,9 +41,13 @@ ul.social-network {
     }
 
 
+    .logo:hover {
+        opacity: 0.5;
+    }
+
 /* footer social icons */
-.social-network a.icoRss:hover {
-    background-color: #F56505;
+.social-network a.icoGitHub:hover {
+    background-color: #616161;
 }
 
 .social-network a.icoFacebook:hover {
@@ -54,8 +58,8 @@ ul.social-network {
     background-color: #33ccff;
 }
 
-.social-network a.icoGoogle:hover {
-    background-color: #BD3518;
+.social-network a.icoMedium:hover {
+    background-color: #3b7525;
 }
 
 .social-network a.icoVimeo:hover {
@@ -1226,9 +1230,9 @@ Default breakpoint here:
 
 body {
     /* Location of the image */
-    background-image: url(~/images/NikoleMcStanley.png);
+    background-image: url(images/NikoleMcStanley.png);
     /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
+    background-position: right bottom;
     /* Background image doesn't tile */
     background-repeat: no-repeat;
     /* Background image is fixed in the viewport so that it doesn't move when 
@@ -1236,8 +1240,193 @@ body {
     background-attachment: fixed;
     /* This is what makes the background image rescale based
      on the container's size */
-    background-size: cover;
+    background-size: contain;
     /* Set a background color that will be displayed
      while the background image is loading */
     background-color: #84958b;
+    position: relative;
 }
+
+/* Mobile Only */
+@media (max-width: 767px) {
+    .body {
+        /* Location of the image */
+        background-image: url(images/NikoleMcStanleyMobile.png);
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: right bottom;
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+        /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+        background-attachment: fixed;
+        /* This is what makes the background image rescale based
+     on the container's size */
+        background-size: contain;
+        /* Set a background color that will be displayed
+     while the background image is loading */
+        background-color: #84958b;
+        position: relative;
+    }
+}
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
+#sticky {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 16px;
+    background: rgba(0, 0, 0, .25);
+    font-family: 'Segoe Script';
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    position: fixed; /*Here's what sticks it*/
+    bottom: 0; /*to the bottom of the body*/
+    left: 0; /*and to the left of the body.*/
+    /*EFFECTS*/
+    transition: .33s linear;
+}
+
+    #sticky:hover {
+        background: black;
+    }
+
+img {
+    max-width: 100%;
+}
+
+a {
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+    a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+
+
+
+.thumbnails li > .fff .caption {
+    background: rgba(255, 255, 255, 0.2) !important;
+    
+    padding: 10px
+}
+
+/* Page Header */
+.page-header {
+    background: #f9f9f9;
+    margin: -30px -40px 40px;
+    padding: 20px 40px;
+    border-top: 4px solid #ccc;
+    color: #999;
+    text-transform: uppercase;
+}
+
+    .page-header h3 {
+        line-height: 0.88rem;
+        color: #000;
+    }
+
+ul.thumbnails {
+    margin-bottom: 0px;
+}
+
+
+
+/* Thumbnail Box */
+.caption h4 {
+    color: black;
+}
+
+.caption p {
+    color: #3e4a43;
+}
+
+.carousel{
+    padding-top: 50px;
+}
+/* Carousel Control */
+.control-box {
+    text-align: right;
+    width: 100%;
+}
+
+.carousel-control {
+    background: #666;
+    border: 0px;
+    border-radius: 0px;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 200;
+    line-height: 18px;
+    opacity: 0.5;
+    padding: 4px 10px 0px;
+    position: static;
+    height: 30px;
+    width: 15px;
+}
+
+
+
+/* Mobile Only */
+@media (max-width: 767px) {
+    .page-header, .control-box {
+        text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    .caption {
+        word-break: break-all;
+    }
+}
+
+
+li {
+    list-style-type: none;
+}
+
+::selection {
+    background: #ff5e99;
+    color: #FFFFFF;
+    text-shadow: 0;
+}
+
+::-moz-selection {
+    background: #ff5e99;
+    color: #FFFFFF;
+}
+
+
+
+.content h1 {
+    padding-left: 40px;
+    font-size: 100px;
+    font-family: 'Arizonia';
+    color: #2b2b2b;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+.content p {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #2b2b2b;
+}
+
+
+
